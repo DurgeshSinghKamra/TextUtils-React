@@ -1,0 +1,49 @@
+JSX:
+
+1. JSX is just HTML with JS included in it.
+
+2. Uses camel case just like JS hence class ---> className etc.
+
+3. javascript is included in this jSX with the help of curly bracket {},like we can use variable names and all just like we use '${}' in JS.
+
+4. EX code: 
+    <div className="App">
+      <header className="App-header">
+        <img src={logo} className="App-logo" alt="logo" />
+        <p>
+          Edit <code>src/App.js</code> and save to reload.
+        </p>
+        <a
+          className="App-link"
+          href="https://reactjs.org"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn React
+        </a>
+      </header>
+    </div>
+
+
+EXPORT:
+
+default export: syntax --> export default {{variable name or function name}}
+    it is default export so even if we dont write correct variable name when importing, it will only consider the default one. No need of curly brackets in this case as default export can only be one var/func.
+
+non-default export: syntax --> export {variable name or function name}  //curly bracs are required
+
+when importing--> import {a,b,c,d,...} from .. ;
+--> here, a,b,c vars name should be strictly same.
+
+PROPS:
+
+1. Navbar,propTypes= { title: propTypes.string,
+                        aboutText: propTypes.string,
+
+                        } ---> This just fixes that a prop is of what type like string, array, object.
+
+2. Navbar.defaultprops{
+    title: "TextUtils",
+    aboutText: "About Us"
+
+} ---> If we dont pass values to any props then it will use this default vaues instead and if we passes some value then that would override this one.
